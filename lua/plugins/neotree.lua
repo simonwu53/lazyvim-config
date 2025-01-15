@@ -5,6 +5,20 @@ return {
     document_symbols = {
       follow_cursor = true,
     },
+    filesystem = {
+      filtered_items = {
+        hide_gitignored = false,
+        always_show_by_pattern = {
+          ".env*",
+          ".gitignore",
+        },
+        never_show = {
+          ".DS_Store",
+          "thumbs.db",
+          "__pycache__",
+        },
+      }
+    }
   },
   keys = {
     {
