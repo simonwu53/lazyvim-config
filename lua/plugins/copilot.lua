@@ -3,10 +3,11 @@ return {
   opts = {
     suggestion = {
       enabled = true,
-      auto_trigger = false,
+      auto_trigger = true,
     },
     filetypes = {
-      yaml = true
+      yaml = true,
+      markdown = true
     },
   },
 }

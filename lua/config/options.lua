@@ -12,3 +12,8 @@ vim.g.autoformat = false
 vim.keymap.set("n", "<leader>at", function()
   require("copilot.suggestion").toggle_auto_trigger()
 end, { desc = "Toggle Copilot auto-[T]rigger" })
+
+-- add shortcuts for lsp restart
+vim.keymap.set("n", "<leader>cL", function()
+  vim.cmd([[ LspRestart ]])
+end, { desc = "Restart [L]SP" })
