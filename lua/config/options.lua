@@ -17,3 +17,8 @@ end, { desc = "Toggle Copilot auto-[T]rigger" })
 vim.keymap.set("n", "<leader>cL", function()
   vim.cmd([[ LspRestart ]])
 end, { desc = "Restart [L]SP" })
+
+-- Disable automatic text wrapping
+vim.g.textwidth = 0
+vim.g.wrapmargin = 0
+
